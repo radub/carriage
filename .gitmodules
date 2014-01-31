@@ -1,0 +1,3 @@
+[submodule "devops/chef/cookbooks/apache2"]
+	path = devops/chef/cookbooks/apache2
+	url = https://github.com/opscode-cookbooks/apache2.git
