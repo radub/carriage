@@ -1,3 +1,18 @@
 [submodule "devops/chef/cookbooks/apache2"]
 	path = devops/chef/cookbooks/apache2
 	url = https://github.com/opscode-cookbooks/apache2.git
+[submodule "devops/chef/cookbooks/apt"]
+	path = devops/chef/cookbooks/apt
+	url = https://github.com/opscode-cookbooks/apt.git
+[submodule "devops/chef/cookbooks/mysql"]
+	path = devops/chef/cookbooks/mysql
+	url = https://github.com/opscode-cookbooks/mysql.git
+[submodule "devops/chef/cookbooks/openssl"]
+	path = devops/chef/cookbooks/openssl
+	url = https://github.com/opscode-cookbooks/openssl.git
+[submodule "devops/chef/cookbooks/php"]
+	path = devops/chef/cookbooks/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule "devops/chef/cookbooks/vim"]
+	path = devops/chef/cookbooks/vim
+	url = https://github.com/opscode-cookbooks/vim.git
