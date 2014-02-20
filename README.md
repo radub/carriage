@@ -13,8 +13,11 @@ Package details
 Setup
 
 1. Clone repo
-  $ git clone https://github.com/radub/vm.git .
-  $ git submodule update --init --recursive
+  
+  git clone https://github.com/radub/vm.git .
+  
+  git submodule update --init --recursive
 
 2. VM Spin-up
-  $ vagrant up
+  
+  vagrant up
