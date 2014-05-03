@@ -14,13 +14,14 @@ Setup
 
 1. Clone repo
   
-  git clone https://github.com/radub/vm.git .
+  $ git clone https://github.com/radub/vm.git .
   
-  git submodule update --init --recursive
+  $ git submodule update --init --recursive
   
-  - after adding the submodules you can pull the submodule changes with:
-  git submodule foreach git pull origin master
+  after adding the submodules you can pull the submodule changes with:
+  
+  $ git submodule foreach git pull origin master
 
 2. VM Spin-up
   
-  vagrant up
+  $ vagrant up
