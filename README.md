@@ -17,6 +17,9 @@ Setup
   git clone https://github.com/radub/vm.git .
   
   git submodule update --init --recursive
+  
+  - after adding the submodules you can pull the submodule changes with:
+  git submodule foreach git pull origin master
 
 2. VM Spin-up
   
