@@ -6,7 +6,7 @@ VirtualBox + Vagrant + Chef-Solo VM spinup
 
 - contains vm spinup configuration and provisioning using chef-solo
 - before spining up the VM you might want to check the Vagrant file for any configurations of your own you might want to change
-- the cookbooks used for provisioning reside in /devops/chef/cookbooks as git submodules
+- the cookbooks used for provisioning reside in /devops/chef/cookbooks as git submodules provided by OpsCode (https://github.com/opscode-cookbooks)
 
 ## Prerequisites
 
