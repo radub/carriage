@@ -3,8 +3,10 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-    config.vm.box = "precise64"
-    config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+	config.omnibus.chef_version = :latest
+
+	config.vm.box = "opscode-ubuntu-14.04"
+	config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
 
     config.vm.network "forwarded_port", guest: 80, host: 8080
 
@@ -14,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.provider :virtualbox do |vb|
         vb.gui = false
-        vb.customize ["modifyvm", :id, "--name", "machine-name", "--memory", "1024"]
+        vb.customize ["modifyvm", :id, "--name", "opscode-ubuntu-14.04", "--memory", "1024"]
     end
 
     config.vm.provision "chef_solo" do |chef|
