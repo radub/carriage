@@ -1,16 +1,26 @@
-vm
-==
+# The VM
 
 VirtualBox + Vagrant + Chef-Solo VM spinup
 
-Package details
+## Package details
 
 - contains vm spinup configuration and provisioning using chef-solo
 - before spining up the VM you might want to check the Vagrant file for any configurations of your own you might want to change
-- the cookbooks used for provisioning reside in /devops/chef/cookbooks as git submodules
-- devops/misc/permissions.sh is not realy in the scope of this basic package but you might find it usefull if you want to develop a Drupal project
+- the cookbooks used for provisioning reside in /devops/chef/cookbooks as git submodules provided by OpsCode (https://github.com/opscode-cookbooks)
 
-Setup
+## Prerequisites
+
+Vagrant 1.6
+
+Vagrant plugins:
+- vagrant-omnibus
+```
+vagrant plugin install vagrant-omnibus
+```
+
+VirtualBox 4.3.10
+
+## Setup
 
 1. Clone repo
   
@@ -18,7 +28,7 @@ Setup
   
   $ git submodule update --init --recursive
   
-  after adding the submodules you can pull the submodule changes with:
+  after adding the submodules you may pull the submodule latest updates:
   
   $ git submodule foreach git pull origin master
 
