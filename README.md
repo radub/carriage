@@ -1,22 +1,26 @@
-vm
-==
+# The VM
 
 VirtualBox + Vagrant + Chef-Solo VM spinup
 
-Package details
+## Package details
 
 - contains vm spinup configuration and provisioning using chef-solo
 - before spining up the VM you might want to check the Vagrant file for any configurations of your own you might want to change
 - the cookbooks used for provisioning reside in /devops/chef/cookbooks as git submodules
 
-Prerequisites
+## Prerequisites
 
 Vagrant 1.6
+
 Vagrant plugins:
 - vagrant-omnibus
+```
 vagrant plugin install vagrant-omnibus
+```
 
-Setup
+VirtualBox 4.3.10
+
+## Setup
 
 1. Clone repo
   
