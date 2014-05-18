@@ -10,12 +10,20 @@ VirtualBox + Vagrant + Chef-Solo VM spinup
 
 ## Prerequisites
 
-Vagrant 1.6
+1. Chef Development Kit (tested on 0.1.0 - http://www.getchef.com/downloads/chef-dk)
 
-Vagrant plugins:
-- vagrant-omnibus
+2. Vagrant (tested on v 1.6)
+
+###### Vagrant plugins:
+
+vagrant-omnibus
 ```
 vagrant plugin install vagrant-omnibus
+```
+
+vagrant-berkshelf
+```
+vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
 ```
 
 VirtualBox 4.3.10
