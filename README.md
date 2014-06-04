@@ -27,6 +27,23 @@ vagrant-berkshelf
 $ vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
 ```
 
+## Tested versions
+
+```
+$ ruby --version
+# ruby 2.0.0p451 (2014-02-24 revision 45167) [universal.x86_64-darwin13]
+
+$ vagrant plugin list
+# vagrant-berkshelf (2.0.1)
+#   - Version Constraint: 2.0.1
+# vagrant-login (1.0.1, system)
+# vagrant-omnibus (1.4.1)
+# vagrant-share (1.0.1, system)
+
+$ chef-solo --version 
+# Chef: 11.14.0.alpha.1
+```
+
 # Setup
 
 #### 1. Clone the repo
