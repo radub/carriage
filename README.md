@@ -19,17 +19,17 @@ VirtualBox + Vagrant + Chef-Solo VM spinup
 
 vagrant-omnibus
 ```
-vagrant plugin install vagrant-omnibus
+$ vagrant plugin install vagrant-omnibus
 ```
 
 vagrant-berkshelf
 ```
-vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
+$ vagrant plugin install vagrant-berkshelf --plugin-version 2.0.1
 ```
 
 # Setup
 
-1. Clone the repo
+#### 1. Clone the repo
 
 ```  
 $ git clone https://github.com/radub/vm.git .
@@ -40,7 +40,7 @@ $ git submodule update --init --recursive
 $ git submodule foreach git pull origin master
 ```
 
-2. VM Spin-up
+#### 2. VM Spin-up
 
 ```  
 $ vagrant up
