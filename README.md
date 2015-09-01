@@ -1,4 +1,4 @@
-# The VM
+# Carriage
 
 Bare-bones VirtualBox + Vagrant + Chef-Solo VM spin-up
 
